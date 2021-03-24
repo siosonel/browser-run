@@ -98,6 +98,7 @@ Returns a duplex stream and starts a webserver.
 * `mock`: Path to code to handle requests for mocking a dynamic back-end
 * `input`: Input type. Defaults to `javascript`, can be set to `html`.
 * `node`: Enable nodejs integration in electron
+* `sandbox`: Use "--no-sandbox" to run electron outside of a sandbox, may be required in a docker container to pipe browser stdout and stderr streams to another process or console
 * `basedir`: Set this if you need to require node modules in `node` mode
 
 If only an empty string is written to it, an error will be thrown as there is nothing to execute.
