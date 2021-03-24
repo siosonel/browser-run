@@ -55,6 +55,7 @@ Options:
   --mock         Path to code to handle requests for mocking a dynamic back-end
   --input        Input type. Defaults to 'javascript', can be set to 'html'.
   --node         Enable nodejs apis in electron
+  --no-sandbox   Set this to run electron outside of a sandbox, may be required in a docker container to pipe browser stdout and stderr streams to another process or console                                                               
   --basedir      Set this if you need to require node modules in node mode
   --help         Print help
 ```
